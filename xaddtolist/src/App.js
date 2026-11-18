@@ -142,7 +142,7 @@ export default function App() {
         </form>
 
         {rows.length === 0 ? (
-          <div className="empty">No entries yet. Add your first now!</div>
+          <div className="empty">No entries yet</div>
         ) : (
           <table className="table">
             <thead>
