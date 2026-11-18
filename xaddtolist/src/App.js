@@ -57,6 +57,7 @@ export default function App() {
     //   </div>
     // </div>
     <div className="page">
+      <h1>Square & Circle</h1>
       <div className="square">
         <div className="circle"></div>
       </div>
