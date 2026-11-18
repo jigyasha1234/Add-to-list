@@ -103,7 +103,7 @@ body {
 .remove-btn:hover { background: #fbcaca; } */
 
 /* changes for square and circle app */
-* { box-sizing: border-box; }
+/* * { box-sizing: border-box; }
 
 body {
   margin: 0;
@@ -115,6 +115,12 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.title {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 800;
+  color: #0f172a;
 }
 
 .square {
@@ -133,4 +139,143 @@ body {
   border-radius: 50%;
   background: #342ee1;
   border:#050c0f solid 2px;
+} */
+
+/* XTableData */
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", system-ui, -apple-system, Arial, sans-serif;
+  background: #f5f6fa;
+  color: #0f172a;
 }
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+}
+
+.card {
+  width: 100%;
+  max-width: 640px;
+  background: #fff;
+  border-radius: 12px;
+  padding: 18px 18px 20px;
+  box-shadow: 0 6px 24px rgba(17, 24, 39, 0.08);
+}
+
+.title {
+  margin: 0;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.subtitle {
+  margin: 2px 0 14px;
+  text-align: center;
+  font-size: 11px;
+  color: #4b5a8a;
+}
+
+.fields {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 10px;
+}
+
+.field input {
+  padding: 7px 9px;
+  font-size: 11px;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  outline: none;
+  background: #fafbfc;
+}
+
+.field input:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.2);
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+  margin: 12px 0;
+}
+
+.add-btn,
+.clear-btn,
+.remove-btn {
+  font-size: 11px;
+  font-weight: 700;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.add-btn {
+  padding: 8px 14px;
+  color: #fff;
+  background: #2563eb;
+  border: none;
+}
+.add-btn:hover { background: #1d4fd8; }
+
+.clear-btn {
+  padding: 8px 12px;
+  color: #0f172a;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+}
+.clear-btn:hover { background: #f3f4f6; }
+
+.empty {
+  padding: 14px;
+  text-align: center;
+  font-size: 11px;
+  color: #4b5a8a;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 11px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.table th,
+.table td {
+  padding: 10px;
+  text-align: left;
+}
+
+.table thead th {
+  background: #f6f7fb;
+  font-weight: 700;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.table td { color: #1e2a5a; }
+
+.remove-btn {
+  padding: 6px 12px;
+  color: #7f1d1d;
+  background: #fde2e2;
+  border: none;
+}
+.remove-btn:hover { background: #fbcaca; }
